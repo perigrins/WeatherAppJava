@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/258ee7b0-90dd-40ee-bf68-002a533b9489/console.sql" dialect="SQLite" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/example/WeatherPanel.java" dialect="GenericSQL" />
+  </component>
+</project>
