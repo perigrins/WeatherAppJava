@@ -1,0 +1,249 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+			"$columnSpecs": "24, 241, 15, 277, 158"
+			"$rowSpecs": "24, 35, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 59"
+			"$hGap": 5
+			"$vGap": 5
+			"$alignTop": true
+			"$alignLeft": true
+		} ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 825, 500 )
+			"minimumSize": new java.awt.Dimension( 300, 427 )
+			"background": new java.awt.Color( 0, 0, 0, 0 )
+			"foreground": new java.awt.Color( 0, 0, 0, 0 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelcity"
+				"text": "insert city name:"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 1, false )
+				"background": new java.awt.Color( 58, 61, 76, 255 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"verticalAlignment": 1
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 1
+				"gridy": 1
+			} )
+			add( new FormComponent( "javax.swing.JTextArea" ) {
+				name: "textAreaFilter"
+				"text": "enter city name to get its historical data or choose filtering criteria from checkbox"
+				"wrapStyleWord": true
+				"background": new java.awt.Color( 0, 0, 0, 0 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 1, false )
+				"opaque": false
+				"lineWrap": true
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 3
+				"gridwidth": 2
+				"gridy": 1
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldcity"
+				"preferredSize": new java.awt.Dimension( 200, 26 )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				"foreground": new java.awt.Color( 239, 114, 158, 255 )
+				"border": new javax.swing.border.BevelBorder( 1, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink )
+				"opaque": true
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 2
+				"gridx": 1
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textAreaDB"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 4
+				"gridx": 3
+				"gridheight": 4
+				"gridwidth": 2
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBoxDBFilter"
+				"foreground": new java.awt.Color( 239, 114, 158, 255 )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				auxiliary() {
+					"JavaCodeGenerator.typeParameters": "String"
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 3
+				"gridy": 2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldDBFilter"
+				"foreground": new java.awt.Color( 239, 114, 158, 255 )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				"border": new javax.swing.border.BevelBorder( 1, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 2
+				"gridx": 4
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBoxhum"
+				"text": "humidity"
+				"background": new java.awt.Color( 0, 0, 0, 0 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"rolloverEnabled": false
+				"contentAreaFilled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 3
+				"gridx": 1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonRestoreDB"
+				"text": "show full database"
+				"background": new java.awt.Color( 239, 114, 158, 255 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+				"border": new javax.swing.border.BevelBorder( 1, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 3
+				"gridy": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonFilter"
+				"text": "filter database"
+				"background": new java.awt.Color( 239, 114, 158, 255 )
+				"border": new javax.swing.border.BevelBorder( 1, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 3
+				"gridx": 4
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBoxpressure"
+				"text": "pressure"
+				"background": new java.awt.Color( 0, 0, 0, 0 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"rolloverEnabled": false
+				"contentAreaFilled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 4
+				"gridx": 1
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBoxmin"
+				"text": "min temperature"
+				"background": new java.awt.Color( 0, 0, 0, 0 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"rolloverEnabled": false
+				"contentAreaFilled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 5
+				"gridx": 1
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBoxmax"
+				"text": "max temperature"
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"background": new java.awt.Color( 0, 0, 0, 0 )
+				"rolloverEnabled": false
+				"contentAreaFilled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 6
+				"gridx": 1
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBoxsunrise"
+				"text": "sunrise"
+				"background": new java.awt.Color( 0, 0, 0, 0 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"rolloverEnabled": false
+				"contentAreaFilled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 7
+				"gridx": 1
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBoxsunset"
+				"text": "sunset"
+				"background": new java.awt.Color( 0, 0, 0, 0 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"rolloverEnabled": false
+				"contentAreaFilled": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 8
+				"gridx": 1
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonweather"
+				"text": "get weather"
+				"preferredSize": new java.awt.Dimension( 150, 26 )
+				"background": new java.awt.Color( 239, 114, 158, 255 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"border": new javax.swing.border.BevelBorder( 1, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 9
+				"gridx": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelTitlePlot"
+				"text": "insert data to generate your plot"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 1, false )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 9
+				"gridx": 3
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelCityPlot"
+				"text": "insert city:"
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 3
+				"gridy": 10
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				"horizontalScrollBarPolicy": 31
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArearesults"
+					"preferredSize": new java.awt.Dimension( 300, 20 )
+					"background": new java.awt.Color( 0, 0, 0, 0 )
+					"foreground": new java.awt.Color( 239, 114, 158, 255 )
+					"editable": false
+					"opaque": false
+					"caretColor": new java.awt.Color( 255, 102, 102, 255 )
+					"font": new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 10
+				"gridheight": 7
+				"gridx": 1
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldPlotCity"
+				"foreground": new java.awt.Color( 239, 114, 158, 255 )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				"border": new javax.swing.border.BevelBorder( 1, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridy": 11
+				"gridx": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonPlot"
+				"text": "generate plot"
+				"background": new java.awt.Color( 239, 114, 158, 255 )
+				"border": new javax.swing.border.BevelBorder( 1, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink, sfield java.awt.Color pink )
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 1, false )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+				"gridx": 3
+				"gridy": 13
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 55 )
+			"size": new java.awt.Dimension( 825, 500 )
+		} )
+	}
+}
